@@ -33,14 +33,8 @@ class ViewController: UIViewController,
   
   //  Called when user double-taps a kart
   @IBAction func didDoubleTapKart(_ sender: UITapGestureRecognizer) {
-    // Exercise 1: Move the kart forward past the edge of the screen
-    // Tip: Use the `translate` function below
-    // YOUR CODE HERE
-    
-    // Exercise 6: Move the kart back to its original position after you've moved it off the screen
-    // Tip: Change your usage of the `translate` function to
-    // use the optional completion closure
-    // YOUR CODE HERE
+      translate(kart: sender.view,
+                by: view.frame.width)
   }
   
   private func translate(kart: UIView?,
@@ -57,9 +51,8 @@ class ViewController: UIViewController,
   
   // Called when the user rotates a kart
   @IBAction func didRotateKart(_ sender: UIRotationGestureRecognizer) {
-    // Exercise 2: Rotate the kart
-    // Tip: Use the `rotate` function below
-    // YOUR CODE HERE
+      rotate(kart: sender.view,
+             gestureRecognizer: sender)
   }
   
   private func rotate(kart: UIView?,
@@ -71,9 +64,8 @@ class ViewController: UIViewController,
   
   // Called when the user pinches a kart
   @IBAction func didPinchKart(_ sender: UIPinchGestureRecognizer) {
-    // Exercise 3: Change the scale of the kart
-    // Tip: Use the `scale` function below
-    // YOUR CODE HERE
+      scale(kart: sender.view,
+            gestureRecognizer: sender)
   }
   
   private func scale(kart: UIView?,
@@ -92,7 +84,9 @@ class ViewController: UIViewController,
   // Exercise 4: Implement the `moveKart` function to move the kart based on the
   // location of the location of the gesture in the view
   private func moveKart(using gestureRecognizer: UIPanGestureRecognizer) {
-    // YOUR CODE HERE
+      let location = gestureRecognizer.location(in: view)
+      let kartView = gestureRecognizer.view
+      kartView?.center = location
   }
   
   @IBAction func didLongPressBackground(_ sender: UILongPressGestureRecognizer) {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,17 +34,6 @@
                                     <outletCollection property="gestureRecognizers" destination="Kj5-VJ-ha8" appends="YES" id="nxQ-Nf-59J"/>
                                 </connections>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="character_01" translatesAutoresizingMaskIntoConstraints="NO" id="NJQ-JM-uLs" userLabel="Kart1">
-                                <rect key="frame" x="0.0" y="392" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="zjJ-6u-dub" appends="YES" id="1Zn-bP-ZG2"/>
-                                    <outletCollection property="gestureRecognizers" destination="aNM-1O-xdO" appends="YES" id="REN-bE-DGa"/>
-                                    <outletCollection property="gestureRecognizers" destination="tvt-cc-MYm" appends="YES" id="cdf-1v-pIb"/>
-                                    <outletCollection property="gestureRecognizers" destination="iCo-Q7-ZGL" appends="YES" id="lsc-Vj-ooF"/>
-                                </connections>
-                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="character_02" translatesAutoresizingMaskIntoConstraints="NO" id="xqE-wn-w6s" userLabel="Kart2">
                                 <rect key="frame" x="0.0" y="598" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -54,6 +43,17 @@
                                     <outletCollection property="gestureRecognizers" destination="4zu-iS-dMO" appends="YES" id="wJ2-ee-fck"/>
                                     <outletCollection property="gestureRecognizers" destination="SiC-fa-PV4" appends="YES" id="q9w-VB-KXL"/>
                                     <outletCollection property="gestureRecognizers" destination="RUc-6f-f4r" appends="YES" id="yyZ-u1-gFd"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="character_01" translatesAutoresizingMaskIntoConstraints="NO" id="NJQ-JM-uLs" userLabel="Kart1">
+                                <rect key="frame" x="127" y="346" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zjJ-6u-dub" appends="YES" id="1Zn-bP-ZG2"/>
+                                    <outletCollection property="gestureRecognizers" destination="aNM-1O-xdO" appends="YES" id="REN-bE-DGa"/>
+                                    <outletCollection property="gestureRecognizers" destination="tvt-cc-MYm" appends="YES" id="cdf-1v-pIb"/>
+                                    <outletCollection property="gestureRecognizers" destination="iCo-Q7-ZGL" appends="YES" id="lsc-Vj-ooF"/>
                                 </connections>
                             </imageView>
                         </subviews>
