@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,31 +14,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MarioKart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ydb-mH-MbI" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Qrf-hV-kp3" appends="YES" id="FKF-27-1SN"/>
                                 </connections>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="character_04" translatesAutoresizingMaskIntoConstraints="NO" id="als-WX-Waq" userLabel="Kart0">
-                                <rect key="frame" x="0.0" y="195" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="character_02" translatesAutoresizingMaskIntoConstraints="NO" id="xqE-wn-w6s" userLabel="Kart2">
+                                <rect key="frame" x="20" y="449" width="100" height="110"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="r47-Dr-U34" appends="YES" id="67B-Xy-QvO"/>
-                                    <outletCollection property="gestureRecognizers" destination="EsG-Yt-AvT" appends="YES" id="3ZJ-oC-f2z"/>
-                                    <outletCollection property="gestureRecognizers" destination="cDS-Cj-uM2" appends="YES" id="qsj-gz-pOa"/>
-                                    <outletCollection property="gestureRecognizers" destination="Kj5-VJ-ha8" appends="YES" id="nxQ-Nf-59J"/>
-                                </connections>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="character_02" translatesAutoresizingMaskIntoConstraints="NO" id="xqE-wn-w6s" userLabel="Kart2">
-                                <rect key="frame" x="0.0" y="598" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="AER-qa-0JN"/>
+                                    <constraint firstAttribute="height" constant="110" id="mS0-Y7-YKh"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="0m8-39-CqE" appends="YES" id="wH8-wS-zK1"/>
                                     <outletCollection property="gestureRecognizers" destination="4zu-iS-dMO" appends="YES" id="wJ2-ee-fck"/>
@@ -45,10 +38,13 @@
                                     <outletCollection property="gestureRecognizers" destination="RUc-6f-f4r" appends="YES" id="yyZ-u1-gFd"/>
                                 </connections>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="character_01" translatesAutoresizingMaskIntoConstraints="NO" id="NJQ-JM-uLs" userLabel="Kart1">
-                                <rect key="frame" x="127" y="346" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="character_01" translatesAutoresizingMaskIntoConstraints="NO" id="NJQ-JM-uLs" userLabel="Kart1">
+                                <rect key="frame" x="20" y="301" width="100" height="110"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="UNO-qz-rxa"/>
+                                    <constraint firstAttribute="height" constant="110" id="X75-a1-fPA"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="zjJ-6u-dub" appends="YES" id="1Zn-bP-ZG2"/>
                                     <outletCollection property="gestureRecognizers" destination="aNM-1O-xdO" appends="YES" id="REN-bE-DGa"/>
@@ -56,15 +52,56 @@
                                     <outletCollection property="gestureRecognizers" destination="iCo-Q7-ZGL" appends="YES" id="lsc-Vj-ooF"/>
                                 </connections>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="character_04" translatesAutoresizingMaskIntoConstraints="NO" id="als-WX-Waq" userLabel="Kart0">
+                                <rect key="frame" x="20" y="159" width="100" height="110"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Zsy-vM-8F5"/>
+                                    <constraint firstAttribute="height" constant="110" id="e4G-Vv-LhO"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="r47-Dr-U34" appends="YES" id="67B-Xy-QvO"/>
+                                    <outletCollection property="gestureRecognizers" destination="EsG-Yt-AvT" appends="YES" id="3ZJ-oC-f2z"/>
+                                    <outletCollection property="gestureRecognizers" destination="cDS-Cj-uM2" appends="YES" id="qsj-gz-pOa"/>
+                                    <outletCollection property="gestureRecognizers" destination="Kj5-VJ-ha8" appends="YES" id="nxQ-Nf-59J"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lm9-MU-f4t">
+                                <rect key="frame" x="334" y="818" width="81" height="65"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Uq9-qf-h40"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="k9X-RL-KOi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.left" catalog="system" title=" ">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ydb-mH-MbI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GuN-Gn-JUU"/>
-                            <constraint firstItem="ydb-mH-MbI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MRL-p7-6yw"/>
-                            <constraint firstItem="ydb-mH-MbI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WjP-RJ-a5T"/>
-                            <constraint firstAttribute="bottom" secondItem="ydb-mH-MbI" secondAttribute="bottom" id="g2D-uo-vLz"/>
+                            <constraint firstItem="NJQ-JM-uLs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AVs-Q0-jXr"/>
+                            <constraint firstItem="als-WX-Waq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="AmT-BO-nTN"/>
+                            <constraint firstItem="NJQ-JM-uLs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="422" id="AzF-yY-o1A"/>
+                            <constraint firstItem="NJQ-JM-uLs" firstAttribute="top" secondItem="als-WX-Waq" secondAttribute="bottom" constant="32" id="HDJ-Ub-BLk"/>
+                            <constraint firstItem="NJQ-JM-uLs" firstAttribute="leading" secondItem="als-WX-Waq" secondAttribute="leading" id="JbX-Iu-DGy"/>
+                            <constraint firstItem="Lm9-MU-f4t" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="334" id="NIG-02-fZ0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lm9-MU-f4t" secondAttribute="trailing" constant="15" id="NWu-df-FLB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ydb-mH-MbI" secondAttribute="trailing" id="WRb-Cv-aRs"/>
+                            <constraint firstItem="ydb-mH-MbI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-59" id="ZKL-JU-ngH"/>
+                            <constraint firstItem="Lm9-MU-f4t" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-15" id="Zam-jg-lrc"/>
+                            <constraint firstItem="ydb-mH-MbI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ztu-rR-wPY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ydb-mH-MbI" secondAttribute="bottom" constant="-34" id="m81-BX-hgB"/>
+                            <constraint firstItem="NJQ-JM-uLs" firstAttribute="leading" secondItem="xqE-wn-w6s" secondAttribute="leading" id="u04-cZ-Haq"/>
+                            <constraint firstItem="xqE-wn-w6s" firstAttribute="top" secondItem="NJQ-JM-uLs" secondAttribute="bottom" constant="38" id="vX1-xP-eTw"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AzF-yY-o1A"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="kartView0" destination="als-WX-Waq" id="jHd-SY-Ecf"/>
@@ -143,13 +180,17 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="52" y="25.862068965517242"/>
+            <point key="canvasLocation" x="48.75" y="23.239436619718312"/>
         </scene>
     </scenes>
     <resources>
+        <image name="arrowshape.turn.up.left" catalog="system" width="128" height="104"/>
         <image name="background" width="320" height="568"/>
         <image name="character_01" width="340" height="340"/>
         <image name="character_02" width="340" height="340"/>
         <image name="character_04" width="340" height="340"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
