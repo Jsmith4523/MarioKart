@@ -97,7 +97,15 @@ class ViewController: UIViewController,
     
     // Exercise 5: Implement `resetKarts` to reset the size and positioning of the karts
     private func resetKarts() {
-        // YOUR CODE HERE
+        UIView.animate(withDuration: 0.4) {
+            self.kartView0.transform = .identity
+            self.kartView1.transform = .identity
+            self.kartView2.transform = .identity
+            
+            self.kartView0.center = self.originalKartCenters[0]
+            self.kartView1.center = self.originalKartCenters[1]
+            self.kartView2.center = self.originalKartCenters[2]
+        }
     }
     
     // Called whenever the view becomes visible on the screen
@@ -145,20 +153,23 @@ class ViewController: UIViewController,
     // Exercise 9: Have the karts race all at once to the finish line!
     // Tip: Use the `translate` function above
     private func raceKartsWithSameSpeed() {
-        // YOUR CODE HERE
+        let cartSpeed = 0.5
+        
+        translate(kart: kartView0, by: view.frame.width, animationDuration: cartSpeed)
+        translate(kart: kartView1, by: view.frame.width, animationDuration: cartSpeed)
+        translate(kart: kartView2, by: view.frame.width, animationDuration: cartSpeed)
     }
     
     // Exercise 10: Have the karts race all at once to the finish line!
     // Tip: Use the `translate` function above
     private func raceKartsWithRandomizedSpeed() {
         let kartView0Speed = Double.random(in: 0.5...5) // get a random value between 0.5 and 5.0
-        translate(kart: kartView0, by: view.frame.width, animationDuration: kartView0Speed)
         let kartView1Speed = Double.random(in: 0.5...5)
-        translate(kart: kartView1, by: view.frame.width, animationDuration: kartView1Speed)
         let kartView2Speed = Double.random(in: 0.5...5)
-        translate(kart: kartView2, by: view.frame.width, animationDuration: kartView2Speed) {
-            
-        }
+
+        translate(kart: kartView0, by: view.frame.width, animationDuration: kartView0Speed)
+        translate(kart: kartView1, by: view.frame.width, animationDuration: kartView1Speed)
+        translate(kart: kartView2, by: view.frame.width, animationDuration: kartView2Speed)
     }
 }
 

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -66,18 +65,6 @@
                                     <outletCollection property="gestureRecognizers" destination="Kj5-VJ-ha8" appends="YES" id="nxQ-Nf-59J"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lm9-MU-f4t">
-                                <rect key="frame" x="334" y="818" width="81" height="65"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="Uq9-qf-h40"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="k9X-RL-KOi"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.left" catalog="system" title=" ">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -87,11 +74,8 @@
                             <constraint firstItem="NJQ-JM-uLs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="422" id="AzF-yY-o1A"/>
                             <constraint firstItem="NJQ-JM-uLs" firstAttribute="top" secondItem="als-WX-Waq" secondAttribute="bottom" constant="32" id="HDJ-Ub-BLk"/>
                             <constraint firstItem="NJQ-JM-uLs" firstAttribute="leading" secondItem="als-WX-Waq" secondAttribute="leading" id="JbX-Iu-DGy"/>
-                            <constraint firstItem="Lm9-MU-f4t" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="334" id="NIG-02-fZ0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lm9-MU-f4t" secondAttribute="trailing" constant="15" id="NWu-df-FLB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ydb-mH-MbI" secondAttribute="trailing" id="WRb-Cv-aRs"/>
                             <constraint firstItem="ydb-mH-MbI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-59" id="ZKL-JU-ngH"/>
-                            <constraint firstItem="Lm9-MU-f4t" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-15" id="Zam-jg-lrc"/>
                             <constraint firstItem="ydb-mH-MbI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ztu-rR-wPY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ydb-mH-MbI" secondAttribute="bottom" constant="-34" id="m81-BX-hgB"/>
                             <constraint firstItem="NJQ-JM-uLs" firstAttribute="leading" secondItem="xqE-wn-w6s" secondAttribute="leading" id="u04-cZ-Haq"/>
@@ -184,13 +168,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrowshape.turn.up.left" catalog="system" width="128" height="104"/>
         <image name="background" width="320" height="568"/>
         <image name="character_01" width="340" height="340"/>
         <image name="character_02" width="340" height="340"/>
         <image name="character_04" width="340" height="340"/>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
